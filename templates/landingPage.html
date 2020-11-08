@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        Choose Your Books | Author's Attic
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../static/assets/favicon.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="../static/css/landingPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <img id="loader" class="center" src="../static/assets/favicon.png" />
+
+    <div class="parallax-container">
+        <video loop muted autoplay>
+            <source src="../static/assets/Dictionary - 21941.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="search-bar">
+        <form id="search-Books">
+            <input class="search-input" autocomplete="off" type="text" placeholder="Search Books" name="search" id="search">
+            <button class="search-button" name="search_btn">Search</button>
+        </form>
+    </div>
+
+    <div class="books-wrapper"><br><br><br><br><br><br>
+  <h3> TRY IT OUT NOW! </h3>  <br><br><br><br><br><br></div>
+    </div>
+
+    <div id="render"></div>
+
+    <div class="row">
+      <div class="column" style="background-color:transparent;">
+
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+
+                      <h1>Electromagnetics</h1>
+                      <img id="book1-image" src="http://1.bp.blogspot.com/-K6qWu4No4to/TaVUqa_0TNI/AAAAAAAAAAQ/ALertO7fusk/s640/IMG_6392.JPG" alt="Room 1" style="width:350px;height:320px;"><br><br>
+                      <h3><span class="cost-span">500 Rupees</span> per book</h3>
+                  </div>
+                  <div class="flip-card-back">
+                      <h1 id="book1-name">Electromagnetics</h1>
+                      <div class="container">
+                          <div class="grid-container">
+                              <div class="item3"><b>Cost</b></div>
+                              <div class="item4" id="book1-cost">500 per book</div>
+                              <div class="item5"><b>Number </b></div>
+                              <div class="item6" id="book1-number">2</div>
+                              <div class="item7"><b>Availability</b></div>
+                              <div class="item7" id="book1-avail">No</div>
+                          </div>
+                          <div>
+                              <button class="button" id="book1-more"><span>Buy</span></button>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+        <div class="column" style="background-color:transparent;">
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+
+                        <h1>Electronics </h1>
+                        <img id="book2-image" src="http://3.bp.blogspot.com/-b8l2_abgtN0/TaVW7tL7ScI/AAAAAAAAAAg/N7Uc9dp43DY/s640/IMG_6386.JPG" alt="Room 1" style="width:350px;height:320px;"><br><br>
+                        <h3><span class="cost-span">200 Rupees</span> per book</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 id="book2-name"> Electronics</h1>
+                        <div class="container">
+                            <div class="grid-container">
+
+                                <div class="item3"><b>Cost</b></div>
+                                <div class="item4" id="book2-cost">200 per book</div>
+                                <div class="item5"><b>Number </b></div>
+                                <div class="item6" id="book2-number">2</div>
+                                <div class="item7"><b>Availability</b></div>
+                                <div class="item7" id="book2-avail">No</div>
+                            </div>
+                            <div>
+                                <button id="book2-more" class="button"><span>Buy</span></button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column" style="background-color:transparent;">
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+
+                        <h1>Power of Moments</h1>
+                        <img id="book3-image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1506361721l/34467934._SX318_.jpg " alt="Room 1" style="width:350px;height:320px;"><br><br>
+                        <h3><span class="cost-span">80 Rupees</span> per book</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 id="book3-name">Power of Moments</h1>
+                        <div class="container">
+                            <div class="grid-container">
+
+                                <div class="item3"><b>Cost</b></div>
+                                <div class="item4" id="book3-cost">80 per book</div>
+                                <div class="item5"><b>Number </b></div>
+                                <div class="item6" id="book3-number">2</div>
+                                <div class="item7"><b>Availability</b></div>
+                                <div class="item7" id="book3-avail">Yes</div>
+                            </div>
+                            <div>
+                                <button id="book3-more" class="button" ;><span>Buy</span></button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="row">
+      <div class="column" style="background-color:transparent;">
+
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+
+                      <h1>First Among Equals</h1>
+                      <img id="book4-image" src="https://i.pinimg.com/originals/b0/7f/7a/b07f7ac8091e9a1da9029985c800c447.jpg" alt="Room 1" style="width:350px;height:320px;"><br><br>
+                      <h3><span class="cost-span">50 Rupees</span> per book</h3>
+                  </div>
+                  <div class="flip-card-back">
+                      <h1 id="book4-name">First Among Equals</h1>
+                      <div class="container">
+                          <div class="grid-container">
+
+                              <div class="item3"><b>Cost</b></div>
+                              <div class="item4" id="book4-cost">50 per book</div>
+                              <div class="item5"><b>Number</b></div>
+                              <div class="item6" id="book4-number">1</div>
+                              <div class="item7"><b>Availability</b></div>
+                              <div class="item7" id="book4-avail">Yes</div>
+                          </div>
+                          <div>
+                              <button id="book4-more" class="button"><span>Buy</span></button>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+              <div class="column" style="background-color:transparent;">
+
+                  <div class="flip-card">
+                      <div class="flip-card-inner">
+                          <div class="flip-card-front">
+                              <h1>Walden</h1>
+                              <img id="book5-image" src="https://i.pinimg.com/originals/a4/58/41/a45841fc0df93267c3a7b050b5f4a7ba.jpg" alt="Room 1" style="width:350px;height:320px;"><br><br>
+                              <h3><span class="cost-span">40 Rupees</span> per book</h3>
+                          </div>
+                          <div class="flip-card-back">
+                              <h1 id="book5-name">Walden</h1>
+                              <div class="container">
+                                  <div class="grid-container">
+
+                                      <div class="item3"><b>Cost</b></div>
+                                      <div class="item4" id="book5-cost">40 per book</div>
+                                      <div class="item5"><b>Number </b></div>
+                                      <div class="item6" id="book5-number">1</div>
+                                      <div class="item7"><b>Availability</b></div>
+                                      <div class="item7" id="book5-avail">Yes</div>
+                                  </div>
+                                  <div>
+                                      <button class="button" id="book5-more"><span>Buy</span></button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+        <div class="column" style="background-color:transparent;">
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+
+                        <h1>Emma</h1>
+                        <img id="book6-image" src="data:image/jpeg;base64,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" alt="Room 1" style="width:350px;height:320px;"><br><br>
+                        <h3><span class="cost-span">30 Rupees  </span> per book</h3>
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 id="book6-name">Emma</h1>
+                        <div class="container">
+                            <div class="grid-container">
+
+                                <div class="item3"><b>Cost</b></div>
+                                <div class="item4" id="book6-cost">30 per book</div>
+                                <div class="item5"><b>Number </b></div>
+                                <div class="item6" id="book6-number">1</div>
+                                <div class="item7"><b>Availability</b></div>
+                                <div class="item7" id="book6-avail">Yes</div>
+                            </div>
+                            <div>
+                                <button class="button" id="book6-more"><span>Buy</span></button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="row1">
+
+        <div class="column1">
+
+            <div id="container">
+                <br>
+                <h1>PUFFIN CLASSICS SET</h1>
+                </br>
+                <div class="facility-image">
+
+                    <img src="https://i.pinimg.com/originals/26/8f/0c/268f0c28790c9797525fa320f69372e7.jpg" >
+                    <div class="info">
+                        <br><br>
+                        <p class="useless-luxury">PUFFIN CLASSICS SET coming soon</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="column1" style="background-color:transparent;">
+            <div id="container">
+                <br>
+                <h1>PERCY JACKSON SET</h1><br>
+                <div class="facility-image">
+
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/812thAX3iiL._SL1500_.jpg">
+                    <div class="info">
+                        <br><br>
+                        <p class="useless-luxury">PERCY JACKSON SET coming soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p align="center"><br>Made with love and care from Samanvay</p>
+    </div>
+    <script src="../static/js/landingPage.js"></script>
+</body>
+
+
+</html>

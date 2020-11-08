@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        Details | Books
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../static/assets/favicon.png" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="../static/css/bookDetails.css">
+    <link rel="stylesheet" href="../static/css/snackbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="parallax-container">
+        <video loop muted autoplay>
+            <source src="../static/assets/Dictionary - 21941.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="back-button" id="back">
+        <a href="landingPage.html"><i class="fa fa-arrow-circle-left" id="back" aria-hidden="true"></i></a>
+    </div>
+
+    <div id="snackbar">We hope to see you here soon!</div>
+
+    <div class="theProton" id="anywhere">
+        <div class="details">
+            <div class="details-head">
+                <div class="book-name">
+                    <h3 id="name-of-book"></h3>
+                </div>
+                <div class="features">
+                    <div class="cost">
+                        <h2>COST</h2> <br>
+                        <h1 id="book-cost"></h1> <br>
+                        <p>Rupees</p>
+                    </div>
+                    <div class="stats">
+                        <div class="number">
+                            <p>Number of books | <span style="color: white;" id="number-span"></span></p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="fill">
+                    <form>
+                        <div class="Number">
+                            <input id="Number-input" name="numberinput" type="number" autocomplete="off" required class="textfield" placeholder="Number of books"></input>
+                        </div>
+                        <br>
+                    </form>
+                    <button type="submit" class="book" id="button">Buy the book</button>
+                </div>
+            </div>
+        </div>
+        <div class="receipt" id="overlay">
+            <div class="receipt-details">
+                <div class="left">
+                    <div class="left-item">
+                        You are booking
+                    </div>
+                    <div class="left-item">
+                        Number of books
+                    </div>
+                    <div class="left-item">
+                        Cost
+                    </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right-item" id="bookName">
+
+                    </div>
+                    <div class="right-item" id="my-number">
+
+                    </div>
+
+                    <div class="right-item" id="my-cost">
+
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <button class="final-button" id="book-now-overlay">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="../static/js/detailPage.js" defer></script>
+<script src="../static/js/overlay.js" defer></script>
+
+</html>

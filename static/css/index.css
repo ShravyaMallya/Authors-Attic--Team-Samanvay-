@@ -1,0 +1,87 @@
+* {
+    margin: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    box-sizing: border-box;
+    font-family: 'Ubuntu', 'sans Serif';
+}
+
+*::-webkit-scrollbar {
+    /* Chrome, Safari, and Opera */
+    display: none;
+}
+
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#loader {
+    height: 70px;
+    width: 70px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+video {
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
+    -moz-transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
+    transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
+    z-index: -99;
+    -webkit-filter: blur(5px);
+-moz-filter: blur(3px);
+-o-filter: blur(3px);
+-ms-filter: blur(3px);
+filter: blur(3px);
+}
+
+
+.story {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+.story>#story-div {
+    /* margin-top: 20%; */
+    padding-top: 250px;
+    padding-left: 300px;
+    padding-right: 300px;
+    margin: 0;
+    text-align: justify;
+}
+
+.button {
+    padding: 20px 50px 20px 50px;
+    border-radius: 10px;
+    border: none;
+}
+
+@media (max-width:600px) {
+    .story {
+        display: flex;
+        justify-content: center;
+    }
+    .story>#story-div {
+        margin-top: 30%;
+        padding: 10px;
+    }
+}

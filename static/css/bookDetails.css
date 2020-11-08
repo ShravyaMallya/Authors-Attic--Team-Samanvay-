@@ -1,0 +1,308 @@
+* {
+    margin: auto;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    font-family: 'Ubuntu', 'sans Serif';
+    /* Firefox */
+}
+
+*::-webkit-scrollbar {
+    /* Chrome, Safari, and Opera */
+    display: none;
+}
+
+#back {
+    padding: 1vw;
+    font-size: 4vw;
+    color: white;
+}
+
+video {
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
+    -moz-transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
+    transform: translateX(-50%) translateY(-50%) translateZ(-1px) scale(2);
+    z-index: -99;
+    -webkit-filter: blur(5px);
+-moz-filter: blur(3px);
+-o-filter: blur(3px);
+-ms-filter: blur(3px);
+filter: blur(3px);
+}
+
+.theProton {
+    height: 80vh;
+    background-color: rgba(117, 117, 117, 0.055);
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.details {
+    height: 80vh;
+    width: 50%;
+    /* background-color: antiquewhite; */
+}
+
+.details-head {
+    /* background-color: blueviolet; */
+    height: 40vh;
+    justify-content: center;
+}
+
+.book-name>h3 {
+    padding-top: 2vh;
+    font-size: 2.5vw;
+    color: rgb(240, 240, 240);
+    text-align: center;
+}
+
+.features {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.cost {
+    text-align: center;
+    background-color: rgba(153, 40, 40, 0.486);
+    border-radius: 10px;
+    height: 10vw;
+    width: 10vw;
+    margin-left: 90px;
+}
+
+.cost>h2 {
+    font-size: 2vw;
+    margin-top: 1.5vw;
+    color: rgb(189, 189, 189);
+}
+
+.cost>h1 {
+    font-size: 3vw;
+    margin: -1.5vw;
+    color: white;
+}
+
+.cost>p {
+    /* margin: -1.5vw; */
+    color: white;
+}
+
+.number {
+    margin: 5px;
+    background-color: rgba(106, 101, 134, 0.705);
+    border-radius: 1.3vw;
+    height: 4vw;
+    width: 25vw;
+    text-align: center;
+}
+
+.number>p {
+    padding-top: 1.2vw;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+.availability {
+    margin: 5px;
+    background-color: rgba(106, 101, 134, 0.705);
+    border-radius: 1.3vw;
+    height: 4vw;
+    width: 25vw;
+    text-align: center;
+}
+
+.availability>p {
+    padding-top: 1.2vw;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2vw;
+}
+
+.fill {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 40px;
+    text-align: center;
+}
+
+.number>input {
+    width: 230px;
+    height: 40px;
+    border: solid white 2px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+
+.number>input::placeholder {
+    color: white;
+    text-align: center;
+}
+
+.bookImage {
+    height: 80vh;
+    width: 50%;
+    /* background-color: black; */
+    /* background-image: url('./../assets/favicon.jpg'); */
+    border-radius: 20px 0px 0px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.book {
+    text-align: center;
+    margin-top: 20px;
+    width: 620px;
+    height: 60px;
+    padding: 10px;
+    border: none;
+    font-size: 2.5vh;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.185);
+}
+
+.receipt {
+    position: fixed;
+    border-radius: 15px;
+    text-align: center;
+    display: none;
+    width: 80%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(219, 219, 219, 0.993);
+    z-index: 2;
+    cursor: default;
+}
+
+.receipt-details {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.left-item {
+    font-size: 2.5vw;
+    padding: 4px;
+    text-align: right;
+    margin: 10px;
+}
+
+.left {
+    margin-left: 16%;
+}
+
+.right {
+    margin-right: 13%;
+}
+
+.right-item {
+    background-color: rgba(61, 11, 61, 0.514);
+    border-radius: 10px;
+    width: 400px;
+    height: 45px;
+    padding: 4px;
+    padding-left: 15px;
+    font-size: 2.5vw;
+    text-align: left;
+    margin: 10px;
+}
+
+.final-button {
+    text-align: center;
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    margin: -100px;
+    background-color: black;
+    color: white;
+    font-size: 1.5vw;
+    padding: 5px;
+}
+
+@media (max-width:731px) {
+    .theProton {
+        flex-flow: column-reverse nowrap;
+        width: 100vw;
+        height: 100vh;
+    }
+    .details {
+        margin-top: -12vh;
+        width: 100%;
+    }
+    .book-name>h3 {
+        font-size: 5vh;
+    }
+    .features {
+        width: 100%;
+        margin-top: 5vh;
+        flex-flow: column nowrap;
+    }
+    .number {
+        height: 3vh;
+        width: 22vh;
+    }
+    .number>p {
+        font-size: 10px;
+    }
+    .availability {
+        height: 3vh;
+        width: 22vh;
+    }
+    .availability>p {
+        font-size: 10px;
+    }
+    .cost {
+        height: 130px;
+        margin-left: 30%;
+        width: 40%;
+    }
+    .cost>h2 {
+        font-size: 25px;
+        margin-top: 2.5vw;
+        color: rgb(189, 189, 189);
+    }
+    .cost>h1 {
+        font-size: 40px;
+        margin: -2vh;
+        color: white;
+    }
+    .cost>p {
+        /* margin: -1.5vw; */
+        color: white;
+    }
+    .fill {
+        margin: 0;
+    }
+    .number>input {
+        margin-bottom: 10px;
+        width: 70%;
+    }
+    .book {
+        width: 75%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .image {
+        border-radius: 10px;
+        padding: 5px;
+        width: 100%;
+    }
+}
