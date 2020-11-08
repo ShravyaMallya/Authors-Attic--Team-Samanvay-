@@ -1,4 +1,4 @@
-# CodeX
+# Author's Attic
 
-> Its the end of the world as we know it, and you will feel fine with (entity name).
+> An easy and affordable solution to buying books.
 
